@@ -1,0 +1,265 @@
+/*
+    Author: Chirag Boghara
+    Theme: Food order website admin
+    version: 1
+*/
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0 0 100px; /* bottom = footer height */
+  background-color: #f1f2f6;
+}
+
+.wrapper {
+  padding: 1%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.tbl-full {
+  width: 100%;
+}
+
+.tbl-40 {
+  width: 40%;
+}
+
+table tr,
+th {
+  border-bottom: 1px solid black;
+  padding: 1%;
+  text-align: left;
+}
+table tr td {
+  padding: 1%;
+}
+
+.success {
+  color: #2ed573;
+  font-weight: bold;
+}
+
+.error {
+  color: #ff4757;
+  font-weight: bold;
+}
+/* css for footer */
+
+.footer {
+  background-color: #ff4757;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.btn-primary {
+  background-color: #1e90ff;
+  padding: 1%;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bolder;
+  margin: 1%;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #3742fa;
+}
+
+.btn-secondary {
+  background-color: #7bed9f;
+  padding: 1%;
+  color: #000;
+  text-decoration: none;
+  font-weight: bolder;
+  margin: 1%;
+}
+
+.btn-secondary:hover {
+  background-color: #55e683;
+}
+
+.btn-danger {
+  background-color: #ff6b81;
+  padding: 1%;
+  margin: 1%;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.btn-danger:hover {
+  background-color: #ff4757;
+}
+
+.btn-add {
+  padding: 2% 3%;
+  background-color: #1e90ff;
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* CSS for menu */
+
+.footer a {
+  color: pink;
+  opacity: 0.8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  color: #524445;
+  text-decoration: underline;
+}
+
+.menu {
+  border-bottom: 1px solid rgb(161, 160, 160);
+  background-color: white;
+}
+
+.menu .wrapper ul {
+  list-style-type: none;
+}
+
+.menu .wrapper ul li {
+  display: inline;
+  padding: 1%;
+}
+
+.menu .wrapper ul li a {
+  color: #ff6b81;
+  text-decoration: none;
+  font-weight: bolder;
+}
+.menu .wrapper ul li a:hover {
+  color: #ff4757;
+}
+
+/* CSS for main content */
+
+.main-content {
+  padding: 3%;
+  background-color: #f1f2f6;
+}
+
+/* .main-content input[type="text"] {
+  padding: 1%;
+  border: none;
+  border-radius: 5px;
+}
+
+.main-content input[type="password"] {
+  padding: 1%;
+  border: none;
+  border-radius: 5px;
+} */
+
+.main-content input[type="text"]:focus {
+  box-shadow: 2px 2px 5px #ecf2fa;
+  outline: none;
+}
+.main-content input[type="password"]:focus {
+  box-shadow: 2px 2px 5px #ecf2fa;
+  outline: none;
+}
+.lbl {
+  font-weight: bold;
+}
+.col-4 {
+  width: 19%;
+  background-color: white;
+  padding: 2%;
+  margin: 1%;
+  float: left;
+}
+
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+.field-3 {
+  margin: 2%;
+}
+
+/* CSS for login */
+.login-card {
+  padding: 2%;
+  width: 400px;
+  padding: 2%;
+  background-color: white;
+  box-shadow: 20px 20px rgb(0, 0, 0);
+}
+
+.admin-login {
+  /* 100% will not work you have to do vh */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  margin: 2%;
+  padding: 1%;
+}
+
+.admin-login input[type="text"] {
+  padding: 3%;
+}
+
+.admin-login input[type="password"] {
+  padding: 3%;
+}
+
+.btn-login {
+  padding: 2%;
+  width: 120px;
+  height: 45px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.btn-login:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .tbl-40 {
+    width: 100%;
+  }
+}
